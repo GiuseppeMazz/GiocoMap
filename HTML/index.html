@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aiuto Approfondito</title>
+</head>
+<body>
+
+<div>
+  <h1>Aiuto Approfondito</h1>
+
+    <h2>Comandi</h2>
+    <p>
+      comandi singoli:
+      <ul>
+        <li> nord, est, sud, ovest: sono comandi per il movimento del giocatore all'interno del gioco</li>
+        <li> inventario: permette di visualizzafe una lista degli oggetti presenti nell'inventario utente</li>
+        <li> ispeziona/info: fornisce una descrizione della stanza elencando oggetti presenti all'interno 
+            e iluoghi accessibili da esso
+        </li>
+        <li> aiuto: fornisce un aiuto all'utente elencando i comandi</li>
+        <li> aiutoApprofondito: porta a questo file</li>
+        <li> exit: permette di chiudere il programma</li>
+        <li> salva: stampa una lista dei salvataggi presenti e suggerisce i comandi per il salvataggio</li>
+        <li> salvaSlot1: permette di salvare nello slot uno lo stato attuale del gioco</li>
+        <li> salvaSlot2: come prima ma nello slot 2</li>
+        <li> carica: mostra i file come salva  e suggerisce i comandi per il caricamento degli stati salvati su quello attuale</li>
+        <li> caricaSlot1: carica il file dello slot1 nello stato attuale</li>
+        <li> caricaSlot2: come prima ma per lo slot2</li>
+      </ul>
+
+      comandi con oggetto:
+      <ul>
+        <li>usa (oggetto): comando per utilizzare un oggetto, utilizzabile sia su alcuni oggetti prendibili 
+          ma anche per interagire con oggetti fissi nelle stanze (applicabile su: libreria, telecomando, statua, quadro, console, cassaforte)
+        </li>
+        <li>prendi (oggetto): usato per inserire oggetti nell'inventario del giocatore se prendibili</li>
+        <li>ispeziona (oggetto): stampa la desrizione dell'oggetto</li>
+        <li>lascia (oggetto): rimuove un oggetto dall'inventario giocatore e lo inserisce in quello della stanza corrente</li>
+        <li>leggi (oggetto): se utilizzato su un foglio permette di visualizzarlo a schermo</li>
+      </ul>
+
+      comandi con due oggetti:
+      <ul>
+        <li> combina (oggettoContenitore) (oggetto): quest ocomando permette di inserire un oggetto (se compatibile)
+          all'interno dell'oggetto contenitore. NOTA che non e' importante quale oggetto venga inserito nominato prima nel comando
+        </li>
+      </ul>
+    </p>
+
+  <div>
+    <h2>Mappa</h2>
+    <div>
+      <h3>Planimetria esterna</h3>
+      <pre>
+        #                       +------------------------------+
+        #                       |                              |
+        #                       |       Casa(macro area)       |
+        #                       |                              |
+        #                       +--------------+---------------+
+        #                                      |                
+        # +--------------+      +--------------+---------------+
+        # |              |      |                              |
+        # |   Giardino   +------+        Entrata Villa         |
+        # |              |      |                              |
+        # +--------------+      +------------------------------+
+
+      </pre>
+      <h3>Planimetria interna</h3>
+      <pre>
+        #  +---------------+      +-----------------+        
+        #  |               |      |                 |     Scala Cantina
+        #  |    Cucina     |      |    Salotto      +--------
+        #  |               |      |                 |        
+        #  +-------+-------+      +--------+--------+        
+        #          |                       |                 
+        #          |                       |                 
+        # +--------+--------+      +-------+--------+        
+        # |      Sala       |      |                |     Scala Secondo Piano  
+        # |    paranzo      +------+    Ingresso    +--------
+        # |                 |      |                |        
+        # +-----------------+      +-------+--------+    
+        #                                  |
+        #                                  | Uscita casa
+
+
+      </pre>
+      <h3>Planimetria Secondo Piano</h3>
+      <pre>
+        #                     +-------------+       
+        #                     |   Studio    |                       
+        #                     +------+------+                          
+        #                            |                                  
+        #                    +-------+-------+        +-------------+
+        # Scala Primo Piano  |               |        |             |
+        #          ----------+  Corridoio 2  +--------+  Biblioteca |
+        #                    |    piano      |        |             |
+        #                    |               |        +-------------+
+        #                    +---------------+                         
+      </pre>
+      <h3>Planimetria Cantina</h3>
+      <pre>
+        #                     +------------+     +-------------+
+        # Scala Primo Piano   |            |     |             |
+        #          -----------+  Cantina   +-----+  Stanza     |
+        #                     |            |     |  Misteriosa |
+        #                     +------------+     |             |
+        #                                        +-------------+
+      </pre>
+    </div>
+  </div>
+
+  <div>
+    <h2>Soluzioni</h2>
+    <ul>
+      <li>Soluzione cassaforte: 2, 4, 8 (ottenibile usando il telecomando con la pila inserita nel salotto)</li>
+      <li>Soluzione libreria: poszionare i libri da sinistra a destra ovale - lambda - vale tagliato - pallino vuoto coda storataa destra
+         - pallino vuoto con coda in giu -pallino pieno con coda in giu (ottenibile leggendo il foglio ottenuto dopo la cassaforte)
+      </li>
+      <li>Soluzione statua: 3 + 3 + 2 = 8</li>
+      <li>Soluzione quadro elettrico: attivare solo input In e (ma ci sono anche altre soluzioni)</li>
+    </ul>
+    
+  </div>
+
+  <div>
+    <h2>Disposizione Oggetti</h2>
+    <p>statua->Giardino; pila->SalaPranzo; telecomando-> Salotto; cassaforte->Studio; libreria, chiaveStudio->Biblioteca; console, quadroElettrico->Cantina.
+
+    </p>
+  </div>
+  
+</div>
+</body>
+</html>
