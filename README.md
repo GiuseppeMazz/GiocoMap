@@ -7,7 +7,9 @@ L'interazione utente - programma avviene principamlente tramite comandi inseriti
 Oltre all'interazione puramente testuale è possibile trovare alcuni minigame/ "rompicapo" molto semplici ed intuitivi che prediligono un interazione grafica che solitamente predilige l'utilizzo del mouse con mecanismi di drag and drop.
 ### Struttura delle classi
 Qui sotto è riportato il diagramma delle classi centrale e ala base del programma, che comprende i tasselli essenziali che compongono il programma alla radice.
-IMMAGINE
+
+![image](https://github.com/user-attachments/assets/caf67bba-38b3-48a8-a2d8-d4bb35b7d727)
+
 
 ### Specifica algebrica, list 
 ---
